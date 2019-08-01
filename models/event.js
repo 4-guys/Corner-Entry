@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-  var event = sequelize.define("event", {
+  var event = sequelize.define("Event", {
     // Giving the event model a name of type STRING
     eventName:  {
       type: DataTypes.STRING,
