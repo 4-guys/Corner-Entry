@@ -26,7 +26,13 @@ module.exports = function (router) {
     });
 
     router.post("/api/users", function (req, res) {
-        db.User.create(req.body).then(function (dbUser) {
+        db.User.create({
+            firstName: req.body.firstName,
+            lastName: req.body.lastName,
+            address: req.body.address,
+            phone: req.body.phone,
+            googleId: req.body.googleId
+        }).then(function (dbUser) {
             res.json(dbUser);
         });
     });
