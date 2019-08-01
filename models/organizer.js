@@ -7,7 +7,7 @@ module.exports = function(sequelize, DataTypes) {
   organizer.associate = function(models) {
     // Associating organizer with Posts
     // When an organizer is deleted, also delete any associated Posts
-    organizer.hasMany(models.events, {
+    organizer.hasMany(models.event, {
       onDelete: "cascade"
     });
   };
