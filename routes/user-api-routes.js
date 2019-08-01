@@ -29,6 +29,7 @@ module.exports = function (app) {
             lastName: req.body.lastName,
             address: req.body.address,
             phone: req.body.phone,
+            email: req.body.email,
             googleId: req.body.googleId
         }).then(function (dbUser) {
             res.json(dbUser);
