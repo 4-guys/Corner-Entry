@@ -1,11 +1,9 @@
 var db = require("../models");
 
-module.exports = function (router) {
-
-    var router = require("express").Router();
+module.exports = function (app) {
 
     // GET route for getting all of the events
-    router.get("/api/events", function (req, res) {
+    app.get("/api/events", function (req, res) {
         var query = {};
         if (req.query.googleId) {
             query.googleId = req.query.googleId;
@@ -20,7 +18,7 @@ module.exports = function (router) {
     });
 
     // Get route for retrieving a single event
-    router.get("/api/events/:id", function (req, res) {
+    app.get("/api/events/:id", function (req, res) {
         db.Event.findOne({
             where: {
                 id: req.params.id
@@ -32,14 +30,14 @@ module.exports = function (router) {
     });
 
     // POST route for saving a new event
-    router.post("/api/events", function (req, res) {
+    app.post("/api/events", function (req, res) {
         db.Event.create(req.body).then(function (dbEvent) {
             res.json(dbEvent);
         });
     });
 
     // DELETE route for deleting events
-    router.delete("/api/events/:id", function (req, res) {
+    app.delete("/api/events/:id", function (req, res) {
         db.Event.destroy({
             where: {
                 id: req.params.googleId

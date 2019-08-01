@@ -1,10 +1,8 @@
 var db = require("../models");
 
-module.exports = function (router) {
+module.exports = function (app) {
 
-    var router = require("express").Router();
-
-    router.get("/api/users", function (req, res) {
+    app.get("/api/users", function (req, res) {
 
         db.User.findAll({
             include: [db.Event]
@@ -13,7 +11,7 @@ module.exports = function (router) {
         });
     });
 
-    router.get("/api/users/:id", function (req, res) {
+    app.get("/api/users/:id", function (req, res) {
 
         db.User.findOne({
             where: {
@@ -25,7 +23,7 @@ module.exports = function (router) {
         });
     });
 
-    router.post("/api/users", function (req, res) {
+    app.post("/api/users", function (req, res) {
         db.User.create({
             firstName: req.body.firstName,
             lastName: req.body.lastName,
@@ -37,7 +35,7 @@ module.exports = function (router) {
         });
     });
 
-    router.delete("/api/users/:id", function (req, res) {
+    app.delete("/api/users/:id", function (req, res) {
         db.User.destroy({
             where: {
                 id: req.params.googleId
