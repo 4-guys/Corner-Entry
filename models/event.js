@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-  var event = sequelize.define("event", {
+  var Event = sequelize.define("Event", {
     // Giving the event model a name of type STRING
     eventName:  {
       type: DataTypes.STRING,
@@ -15,18 +15,18 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
     });
-  event.associate = function(models) {
+  Event.associate = function(models) {
     // Associating Store with Posts
     // When an Store is deleted, also delete any associated Posts
-    event.belongsTo(models.organizer, {
+    Event.belongsTo(models.Organizer, {
       foreignKey: {
         allowNull: true
       }});
-    event.belongsToMany(models.user, {
-      through: models.userSignup
+    Event.belongsToMany(models.User, {
+      through: models.UserSignup
     });
   };
   
-  return event;
+  return Event;
 
 }

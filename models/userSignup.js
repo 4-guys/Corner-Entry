@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-    var userSignup = sequelize.define("userSignup", {
+    var UserSignup = sequelize.define("UserSignup", {
       quantity: {
         type: DataTypes.INTEGER,
       },
@@ -10,6 +10,6 @@ module.exports = function(sequelize, DataTypes) {
         freezeTableName: true
     });
   
-    return userSignup;
+    return UserSignup;
   };
   

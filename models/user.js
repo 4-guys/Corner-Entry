@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-  var user = sequelize.define("user", {
+  var User = sequelize.define("User", {
     // Giving the user model a name of type STRING
     firstName: {
       type: DataTypes.STRING,
@@ -39,13 +39,13 @@ module.exports = function(sequelize, DataTypes) {
 
   });
 
-  user.associate = function(models) {
+  User.associate = function(models) {
     // Associating Store with Posts
     // When an Store is deleted, also delete any associated Posts
-    user.belongsToMany(models.event, {
-      through: models.userSignup
+    User.belongsToMany(models.Event, {
+      through: models.UserSignup
     });
   };
 
-  return user;
+  return User;
 };
