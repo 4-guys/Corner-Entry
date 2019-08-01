@@ -1,4 +1,4 @@
-module.exports = function(sequelize, DataTypes) {
+module.exports = function (sequelize, DataTypes) {
   var event = sequelize.define("event", {
     // Giving the event model a name of type STRING
     eventName:  {
@@ -14,7 +14,7 @@ module.exports = function(sequelize, DataTypes) {
         len: [1]
       });
 
-  event.associate = function(models) {
+  event.associate = function (models) {
     // Associating Store with Posts
     // When an Store is deleted, also delete any associated Posts
     event.belongsTo(models.organizer, {
@@ -22,8 +22,11 @@ module.exports = function(sequelize, DataTypes) {
         allowNull: true
       }
     event.belongsToMany(models.user, {
-      through: models.userSignup
-    });
+        through: models.userSignup
+      });
+    };
+
+    return store;
   };
 
   return event;
