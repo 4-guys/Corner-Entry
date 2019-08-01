@@ -1,17 +1,34 @@
-module.exports = function(sequelize, DataTypes) {
-  var event = sequelize.define("event", {
+module.exports = function (sequelize, DataTypes) {
+  var Event = sequelize.define("Event", {
     // Giving the event model a name of type STRING
-    name: DataTypes.STRING,
-    description: DataTypes.STRING
+    eventName: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
+    },
+    eventDescription: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
+    }
   });
-
-  event.associate = function(models) {
+  Event.associate = function (models) {
     // Associating Store with Posts
     // When an Store is deleted, also delete any associated Posts
-    event.belongsToMany(models.user, {
-      through: models.userSignup
+    Event.belongsTo(models.Organizer, {
+      foreignKey: {
+        allowNull: true
+      }
+    });
+    Event.belongsToMany(models.User, {
+      through: models.UserSignup
     });
   };
 
-  return store;
-};
+  return Event;
+
+}
