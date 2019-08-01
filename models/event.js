@@ -14,7 +14,47 @@ module.exports = function (sequelize, DataTypes) {
       validate: {
         len: [1]
       }
-    }
+    },
+    eventLocation: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
+    },
+    eventDate: {
+      type: DataTypes.DATEONLY,
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
+    },
+    registrationStart: {
+      type: DataTypes.DATEONLY,
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
+    },
+    registrationEnd: {
+      type: DataTypes.DATEONLY,
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
+    },
+    maxEntry: {
+      type: DataTypes.BIGINT,
+      allowNull: true,
+     
+    },
+    eventPhoto: {
+      type: DataTypes.STRING,
+      allowNull: true,
+     
+    },
+
+
   });
   Event.associate = function (models) {
     // Associating Store with Posts
