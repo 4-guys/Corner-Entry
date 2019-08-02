@@ -15,6 +15,14 @@ module.exports = function (sequelize, DataTypes) {
         len: [1]
       }
     },
+        email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
+    },
+
     address: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -26,7 +34,7 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.INTEGER,
       allowNull: false,
       validate: {
-        len: [9]
+        len: [10]
       }
     },
     googleId: {
