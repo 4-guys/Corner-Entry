@@ -57,8 +57,8 @@ module.exports = function (sequelize, DataTypes) {
 
   });
   Event.associate = function (models) {
-    // Associating Store with Posts
-    // When an Store is deleted, also delete any associated Posts
+  //   // Associating Store with Posts
+  //   // When an Store is deleted, also delete any associated Posts
     Event.belongsTo(models.Organizer, {
       foreignKey: {
         allowNull: true

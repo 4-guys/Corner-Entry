@@ -4,13 +4,13 @@ module.exports = function (sequelize, DataTypes) {
     name: DataTypes.STRING
   });
 
-  Organizer.associate = function (models) {
-    // Associating Organizer with Posts
-    // When an Organizer is deleted, also delete any associated Posts
-    Organizer.hasMany(models.Event, {
-      onDelete: "cascade"
-    });
-  };
+  // Organizer.associate = function (models) {
+  //   // Associating Organizer with Posts
+  //   // When an Organizer is deleted, also delete any associated Posts
+  //   Organizer.hasMany(models.Event, {
+  //     onDelete: "cascade"
+  //   });
+  // };
 
   return Organizer;
 };

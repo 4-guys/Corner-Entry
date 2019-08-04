@@ -15,7 +15,7 @@
   
   .menu-hover-lines li a {
     padding: 0.75rem 0;
-    color: rgba(10, 10, 10, 0.5);
+    color: rgba(36, 33, 33, 0.5);
     position: relative;
     margin-left: 1rem;
   }
@@ -34,7 +34,7 @@
     position: absolute;
     content: '';
     transition: all 0.35s ease;
-    background-color: #1779ba;
+    background-color: #292626;
     width: 0;
   }
   
@@ -73,9 +73,22 @@
 
   /* Head Image */
 
+  #cornerexit {
+  position: relative;
+  right: 10%;
+  /* background: linear-gradient(rgba(255, 255, 255, 0.384), rgba(24, 24, 24, 0.411)); */
+  background: rgba(204, 204, 204, 0.479);
+  padding-right: 5%;
+  padding-left: 5%;
+  width: 55%;
+  border-bottom: 110px;
+}
+
   .full-width-testimonial {
-    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)), url("https://stmed.net/sites/default/files/classic-cars-wallpapers-32009-9932570.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)), url("../../assets/img/White-Car2.jpg");
     background-position: center center;
+    background-size: 100%;
+    background-position-y: 62%;
   }
   
   .full-width-testimonial-icon .quote-path {
@@ -93,15 +106,21 @@
   .full-width-testimonial-section {
     padding-top: 2rem;
   }
+
+  .full-width-testimonial-text {
+    margin-top: -10px;
+    padding-left: 40px;
+    padding-right: 200px;
+  }
   
   .full-width-testimonial-section .full-width-testimonial-text {
     font-weight: 300;
     color: #ffffff;
     padding-left: 30px;
     padding-right: 30px;
-    margin-top: -5px;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-top: -10px;
+    padding-left: 40px;
+    padding-right: 200px;
     font-size: 1.5em;
   }
   
@@ -124,6 +143,10 @@
     .full-width-testimonial-section .full-width-testimonial-text {
       padding-left: 300px;
       padding-right: 300px;
+    }
+    #cornercar {
+      width: 105%;
+      border-bottom: 110px;
     }
   }
   
@@ -152,18 +175,12 @@
     margin-bottom: 0px;
   }
   
-  .full-width-testimonial-text,
-  .full-width-testimonial-content,
-  .full-width-testimonial-source,
-  .full-width-testimonial-icon {
-    padding-bottom: 2rem;
-  }
-  
   .full-width-testimonial-content {
     width: 100%;
   }
     
   /* Head Image END */
+  
   
 /* app */
   
