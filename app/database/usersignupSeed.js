@@ -54,56 +54,47 @@ var userSignups = [
     {
         UserId: 1,
         EventId: 1,
-        quantity: 100,
-        price: 10.50
+        
     },
     {
         UserId: 2,
         EventId: 1,
-        quantity: 100,
-        price: 20.50
+        
     },
     {
         UserId: 3,
         EventId: 1,
-        quantity: 100,
-        price: 30.50
+        
     },
     {
         UserId: 1,
         EventId: 2,
-        quantity: 100,
-        price: 20.50
+        
     },
     {
         UserId: 2,
         EventId: 2,
-        quantity: 100,
-        price: 10.50
+        
     },
     {
         UserId: 3,
         EventId: 2,
-        quantity: 100,
-        price: 30.50
+        
     },
     {
         UserId: 1,
         EventId: 3,
-        quantity: 100,
-        price: 20.50
+        
     },
     {
         UserId: 2,
         EventId: 3,
-        quantity: 100,
-        price: 30.50
+        
     },
     {
         UserId: 3,
         EventId: 3,
-        quantity: 100,
-        price: 10.50
+        
     }
 ];
 
