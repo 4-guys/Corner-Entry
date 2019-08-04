@@ -11,9 +11,10 @@ app.use(express.json());
 app.use(express.static("public"));
 
 //Routes
-// require("./routes/event-api-routes.js")(app);
-// require("./routes/organizer-api-routes.js")(app);
-// require("./routes/user-api-routes.js")(app);
+//require("./routes/event-api-routes.js")(app);
+//require("./routes/organizer-api-routes.js")(app);
+require("./routes/user-api-routes.js")(app);
+require("./routes/userSignup-routes.js")(app);
 
 app.post("/api/token", function(req, res) {
   // req.body hosts is equal to the JSON post sent from the user

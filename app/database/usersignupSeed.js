@@ -24,7 +24,16 @@ var users = [
         address: '111 middledesk dr, room 3000, ca 92310',
         phone: 714114120,
         password: 26491
-    },];
+    },
+    {
+        firstName: "Test",
+        lastName: "Test",
+        email: "Test@gmail.com",
+        address: '111 middledesk dr, room 3000, ca 92310',
+        phone: 714114120,
+        password: 123
+    },
+];
 var events = [
     {
         eventName: "Meeses",
