@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Sign up</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/css/foundation.min.css"
         integrity="sha256-xpOKVlYXzQ3P03j397+jWFZLMBXLES3IiryeClgU5og= sha384-gP4DhqyoT9b1vaikoHi9XQ8If7UNLO73JFOOlQV1RATrA7D0O7TjJZifac6NwPps sha512-AKwIib1E+xDeXe0tCgbc9uSvPwVYl6Awj7xl0FoaPFostZHOuDQ1abnDNCYtxL/HWEnVOMrFyf91TDgLPi9pNg=="
         crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/signup.css">
 </head>
 
 <body>
@@ -18,35 +18,40 @@
         <li><a href="/events">Events</a></li>
         <li><a href="/organizations">Organizations</a></li>
         <li><a href="/forms">Forms</a></li>
+        <li class="title-bar-right"><a href="/public/assets/login.html" id="signIn">Log In</a></li>
     </ul>
-    <br>
-    <br>
-    <div id="carphoto" class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <br>
-                <h4 class="center">Log In Page</h4>
-                <form>
-                    <div class="grid-container">
-                        <div class="grid-x grid-padding-x">
-                            <div class="medium-6 cell">
-                                <label>Email:
-                                    <input type="email" class="form-control" id="email-input"
-                                        placeholder="Type here.. ">
-                                </label>
-                            </div>
-                            <div class="medium-6 cell">
-                                <label>Password:
-                                    <input type="password" class="form-control" id="password-input"
-                                        placeholder="Type here.. ">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <button type="submit" class="button float-center">Log in!</button>
-                </form>
+    <div class="translucent-form-overlay">
+        <form>
+            <h3>Sign Up Form</h3>
+            <div class="row columns">
+                <label>First Name
+                    <input type="text" id="fn" placeholder="Type first name here..">
+                </label>
             </div>
-        </div>
+            <div class="row columns">
+                <label>Last Name
+                    <input type="text" id="ln" placeholder="Type last name here..">
+                </label>
+            </div>
+            <div class="row columns">
+                <label>Email
+                    <input type="text" id="em" placeholder="Type email here..">
+                </label>
+            </div>
+            <div class="row columns">
+                <label>Address
+                    <input type="text" id="ad" placeholder="Type address here..">
+                </label>
+            </div>
+            <div class="row columns">
+                <label>Phone Number
+                    <input type="text" id="pn" placeholder="Type phone number here..">
+                </label>
+            </div>
+            <button type="submit" class="primary button expanded search-button row columns">
+                Sign Up
+            </button>
+        </form>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/js/foundation.min.js"

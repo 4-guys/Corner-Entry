@@ -1,0 +1,43 @@
+
+.translucent-form-overlay {
+    max-width: 100%;
+    width: 100%;
+    background: url(../img/signup-img.jpg);
+    background-size: 190%;
+    padding: 20px;
+    color:#fefefe;
+    position: absolute;
+    top:10;
+	left: 0;
+	right: 0;
+    margin: auto;
+    text-align: center;
+  }
+
+  .translucent-form-overlay .columns.row {
+    display: block;
+    margin : 0 auto;
+    width: 500px;
+  }
+  
+  .translucent-form-overlay h3, .translucent-form-overlay label {
+    color: black;
+  }
+  
+  .translucent-form-overlay input, .translucent-form-overlay select {
+    color: #8a8a8a;
+  }
+  
+  .translucent-form-overlay input::-webkit-input-placeholder {
+    color: #8a8a8a;
+  }
+  
+  .translucent-form-overlay input:-ms-input-placeholder {
+    color: #8a8a8a;
+  }
+  
+  .translucent-form-overlay input::placeholder {
+    color: #8a8a8a;
+  }
+  
+  
