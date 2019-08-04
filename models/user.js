@@ -33,11 +33,9 @@ module.exports = function (sequelize, DataTypes) {
     phone: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      validate: {
-        len: [10]
-      }
+
     },
-    googleId: {
+    password: {
       type: DataTypes.BIGINT(20),
       allowNull: false,
       validate: {
