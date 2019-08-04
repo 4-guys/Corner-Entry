@@ -1,0 +1,8 @@
+.center {
+    text-align: center;
+}
+
+#carphoto {
+    background: url(../img/White-Car2.jpg);
+    height: 500px;
+}
