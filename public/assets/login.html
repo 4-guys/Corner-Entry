@@ -9,24 +9,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/css/foundation.min.css"
         integrity="sha256-xpOKVlYXzQ3P03j397+jWFZLMBXLES3IiryeClgU5og= sha384-gP4DhqyoT9b1vaikoHi9XQ8If7UNLO73JFOOlQV1RATrA7D0O7TjJZifac6NwPps sha512-AKwIib1E+xDeXe0tCgbc9uSvPwVYl6Awj7xl0FoaPFostZHOuDQ1abnDNCYtxL/HWEnVOMrFyf91TDgLPi9pNg=="
         crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/login.css">
-    <link rel="stylesheet" href="./css/webpage.css">
+    <link rel="stylesheet" href="/assets/css/login.css">
+    <link rel="stylesheet" href="/assets/css/webpage.css">
 </head>
 
 <body>
     <ul class="menu menu-hover-lines">
-        <li class="active"><a href="../views/layouts/index.html">Home</a></li>
+        <li class="active"><a href="/">Home</a></li>
         <li><a href="/events">Events</a></li>
         <li><a href="/organizations">Organizations</a></li>
         <li><a href="/forms">Forms</a></li>
-        <li class="title-bar-right"><a href="/public/assets/signup.html" id="signIn">Sign Up</a></li>
+        <li class="title-bar-right"><a href="/signup" id="signIn">Sign Up</a></li>
     </ul>
     <div id="carphoto" class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <br>
                 <h4 class="center">Log In Page</h4>
-                <form>
+                <form class="login">
                     <div class="grid-container">
                         <div class="grid-x grid-padding-x">
                             <div class="medium-6 cell">
@@ -141,10 +141,11 @@
         <br>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/js/foundation.min.js"
-        integrity="sha256-/PFxCnsMh+nTuM0k3VJCRch1gwnCfKjaP8rJNq5SoBg= sha384-9ksAFjQjZnpqt6VtpjMjlp2S0qrGbcwF/rvrLUg2vciMhwc1UJJeAAOLuJ96w+Nj sha512-UMSn6RHqqJeJcIfV1eS2tPKCjzaHkU/KqgAnQ7Nzn0mLicFxaVhm9vq7zG5+0LALt15j1ljlg8Fp9PT1VGNmDw=="
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/login.js"></script>
+      integrity="sha256-/PFxCnsMh+nTuM0k3VJCRch1gwnCfKjaP8rJNq5SoBg= sha384-9ksAFjQjZnpqt6VtpjMjlp2S0qrGbcwF/rvrLUg2vciMhwc1UJJeAAOLuJ96w+Nj sha512-UMSn6RHqqJeJcIfV1eS2tPKCjzaHkU/KqgAnQ7Nzn0mLicFxaVhm9vq7zG5+0LALt15j1ljlg8Fp9PT1VGNmDw=="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/assets/js/login.js"></script>
     <script>
         $(document).foundation();
     </script>
