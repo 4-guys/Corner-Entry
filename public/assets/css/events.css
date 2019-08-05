@@ -15,3 +15,11 @@ tr:hover {background-color:#ffffff;}
   padding-left: 10%;
   padding-right: 10%;
 }
+
+.unstriped {
+  text-align: left;
+}
+
+.off-canvas-content {
+width: 100%;
+}
