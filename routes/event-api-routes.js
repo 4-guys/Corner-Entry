@@ -5,15 +5,14 @@ module.exports = function (app) {
     // GET route for getting all of the events
     app.get("/api/events", function (req, res) {
         var query = {};
-        if (req.query.googleId) {
-            query.googleId = req.query.googleId;
-        }
-
+        // if (req.query.id) {
+        //     query.id = req.query.id;
+        // }
+        console.log("Michael was here");
         db.Event.findAll({
-            where: query,
-            include: [db.User]
+            // where: query
         }).then(function (dbEvent) {
-            res.json(dbEvent);
+           return res.json(dbEvent);
         });
     });
 
@@ -56,7 +55,7 @@ module.exports = function (app) {
     });
 
     // PUT route for updating events
-    router.put("/api/events", function (req, res) {
+    app.put("/api/events", function (req, res) {
         db.Event.update(
             req.body,
             {
