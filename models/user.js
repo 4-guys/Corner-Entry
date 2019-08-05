@@ -36,10 +36,6 @@ module.exports = function (sequelize, DataTypes) {
     phone: {
       type: DataTypes.BIGINT,
       allowNull: false,
-<<<<<<< HEAD
-
-=======
->>>>>>> 2bb0587c160ef72bffb47dac1d4ac00d12504e1c
     },
     password: {
       type: DataTypes.STRING,

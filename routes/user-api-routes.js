@@ -23,6 +23,20 @@ module.exports = function (app) {
             res.json(dbUser);
         });
     });
+
+    app.get("/api/eventReg/", function (req, res) {
+       db.User.findOne({
+           where:{
+               id: req.user.id
+           },
+           include: [db.Event]
+       
+        }).then(function (reglist) {
+            console.log("test");
+            console.log(reglist);
+            res.json(reglist)
+        })
+    })
     app.get("/api/user_data", function(req, res) {
         if (!req.user) {
           // The user is not logged in, send back an empty object
