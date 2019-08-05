@@ -36,14 +36,6 @@ module.exports = function (sequelize, DataTypes) {
     phone: {
       type: DataTypes.INTEGER,
       allowNull: false,
-<<<<<<< HEAD
-
-    },
-    password: {
-      type: DataTypes.BIGINT(20),
-      allowNull: false,
-=======
->>>>>>> origin/calvin
       validate: {
         len: [1]
       }
@@ -53,7 +45,6 @@ module.exports = function (sequelize, DataTypes) {
       allowNull: false,
 
     },
-    role: DataTypes.STRING
   });
   User.associate = function (models) {
   // Associating Store with Posts

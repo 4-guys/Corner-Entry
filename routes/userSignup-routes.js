@@ -30,17 +30,25 @@ module.exports = function (app) {
     // });
 
     // POST route for saving a new event
-    app.post("/api/userSignup", function (req, res) {
-        console.log("hit")
-        db.UserSignup.create({
-            EventId: req.body.eventId,
-            UserId: req.body.userId
+    // app.post("/api/userSignup", function (req, res) {
+    //     console.log("hit")
+    //     db.UserSignup.create({
+    //         EventId: req.body.EventId,
+    //         UserId: req.body.UserId
             
-        }).then(function (dbUserSignup) {
-            res.json(dbUserSignup);
-        });
-    });
-
+    //     }).then(function (dbUserSignup) {
+    //         res.json(dbUserSignup);
+    //     });
+    // });
+    app.post("/api/userSignup", function(req, res) {
+        console.log(req.body);
+        db.UserSignup.create({
+            EventId: req.body.EventId,
+            UserId: req.body.UserId
+        }).then(function() {
+          res.redirect(307, "/");
+        })
+      });
 //     // DELETE route for deleting userSignup
 //     app.delete("/api/userSignup/:id", function (req, res) {
 //         db.UserSignup.destroy({
