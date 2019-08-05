@@ -31,4 +31,8 @@ module.exports = function (app) {
         console.log("you're sign in");
         res.sendFile(path.join(__dirname, "../public/assets/members.html"));
     });
+    app.get("/admin", isAuthenticatedAdmin, function(req, res) {
+        res.sendFile(path.join(__dirname, "../views/admin.html"));
+      });
+    
 }
