@@ -1,4 +1,5 @@
 # Corner-Entry
+![Logo](/public/assets/img/White-Car_LW.png)
 
 ## Quick Summary
 * Created a racing auto event website where users can sign up an create an account on the website and sign up for local events happening near them.
