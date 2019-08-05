@@ -1,4 +1,4 @@
-# Corner-Entry
+# Corner-Exit
 ![Logo](/public/assets/img/White-Car_LW.png)
 
 ## Quick Summary
