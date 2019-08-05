@@ -6,7 +6,8 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Corner Exit</title>
-  <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation.css
+  ">
   <!-- foundation-float.min.css: Compressed CSS with legacy Float Grid -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/css/foundation-float.min.css"
     integrity="sha256-sP0p6J7SbJGiJ2gkdY1nkVsLgdwiFN2kI370lU+zacQ= sha384-yZLxxcD8nfiSt1qfKJWwHwtkL58WZDTlkBnZN60qr3ZS35+LDsmUF2JHLxdyZ+KU sha512-Z3WbpfWFSsK2dBvoSYZnMvPmxSJUa5cxj3TYlmyj6cq8IXy7iB2nlUk+jjms8gnz4HmpQk/yhRSlRzW7keoSlg=="
@@ -23,8 +24,7 @@
     integrity="sha256-jvk46bzgetf2fy3FF19toDOoy9CG3aFqZfd229doSyo= sha384-w6E9ynA6OV6MFswc7C8nr8QoBiRtqqOKF/5M9ZVyVDDyrUPLI75xizNuXgRZxWK5 sha512-7MZk47L+5Mj6Y0dP3NuB2aqlNdDgzTlCf8m50nvgnCHUbxZ9KabCy8VUzQAl/DqDKwR7E6JsCf1MUjkfCiVzJw=="
     crossorigin="anonymous">
 
-  <link rel="stylesheet" href="../../public/assets/js/webpage.js">
-  <link rel="stylesheet" href="../../public/assets/css/webpage.css">
+  <link rel="stylesheet" href="/assets/css/webpage.css">
   <!-- <link rel="stylesheet" href="foundation-icons.css">
   <link rel="stylesheet" href="webicons.css"> -->
   <!-- <link rel="stylesheet" href="fontawesome-free-5.10.0-web/css/fontawesome.css"> -->
@@ -37,12 +37,12 @@
 
 <body>
   <ul class="menu menu-hover-lines">
-    <li class="active"><a href="#">Home</a></li>
+    <li class="active"><a href="/">Home</a></li>
     <li><a href="#">Events</a></li>
     <li><a href="#">Organizations</a></li>
     <li><a href="#">Forums</a></li>
     <!-- <li><a href="#">Products</a></li> -->
-    <li class="title-bar-right"><a href="../../public/assets/login.html" id="signIn">Sign In</a></li>
+    <li class="title-bar-right"><a href="/login" id="signIn">Sign In</a></li>
   </ul>
 
   <!-- Navbar END -->
@@ -78,7 +78,7 @@
       <br>
 
       <!-- Side panel -->
-      <button class="openbtn" onclick="openNav()">Events |||</button> 
+      <button class="openbtn" onclick="openNav()">Events |||</button>
       <div id="mySidepanel" class="sidepanel">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <div class="app-dashboard-sidebar-inner">
@@ -126,7 +126,7 @@
         </div>
       </div>
       <!-- Side Panel END -->
-      
+
     </div>
     <div class="app-dashboard-body-content off-canvas-content" data-off-canvas-content>
       <h2 class="text-center">AUTOMOTIVE EVENT MANAGEMENT</h2>
@@ -250,25 +250,31 @@
         </div>
       </div> -->
     </div>
-    <div class="norights"><p>&copy; 2019 No Rights Reserved</p></div>
+    <div class="norights">
+      <p>&copy; 2019 No Rights Reserved</p>
+    </div>
     <br>
   </footer>
 
   <!-- Footer END -->
 
   <script>
-      function openNav() {
-        document.getElementById("mySidepanel").style.width = "250px";
-      }
-      
-      function closeNav() {
-        document.getElementById("mySidepanel").style.width = "0";
-      }
-      </script>
-      
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/vendor/what-input.js"></script>
-  <script src="js/vendor/foundation.min.js"></script>
+    function openNav() {
+      document.getElementById("mySidepanel").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidepanel").style.width = "0";
+    }
+  </script>
+
+  <!-- <script src="js/vendor/jquery.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/js/foundation.min.js"
+    integrity="sha256-/PFxCnsMh+nTuM0k3VJCRch1gwnCfKjaP8rJNq5SoBg= sha384-9ksAFjQjZnpqt6VtpjMjlp2S0qrGbcwF/rvrLUg2vciMhwc1UJJeAAOLuJ96w+Nj sha512-UMSn6RHqqJeJcIfV1eS2tPKCjzaHkU/KqgAnQ7Nzn0mLicFxaVhm9vq7zG5+0LALt15j1ljlg8Fp9PT1VGNmDw=="
+    crossorigin="anonymous"></script>
+  <!-- <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.min.js"></script> -->
   <script>
     $(document).foundation();
   </script>

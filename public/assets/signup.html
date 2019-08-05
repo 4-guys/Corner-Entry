@@ -9,49 +9,49 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/css/foundation.min.css"
         integrity="sha256-xpOKVlYXzQ3P03j397+jWFZLMBXLES3IiryeClgU5og= sha384-gP4DhqyoT9b1vaikoHi9XQ8If7UNLO73JFOOlQV1RATrA7D0O7TjJZifac6NwPps sha512-AKwIib1E+xDeXe0tCgbc9uSvPwVYl6Awj7xl0FoaPFostZHOuDQ1abnDNCYtxL/HWEnVOMrFyf91TDgLPi9pNg=="
         crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/signup.css">
-    <link rel="stylesheet" href="./css/webpage.css">
+    <link rel="stylesheet" href="/assets/css/signup.css">
+    <link rel="stylesheet" href="/assets/css/webpage.css">
 </head>
 
 <body>
     <ul class="menu menu-hover-lines">
-        <li class="active"><a href="../views/layouts/index.html">Home</a></li>
+        <li class="active"><a href="/">Home</a></li>
         <li><a href="/events">Events</a></li>
         <li><a href="/organizations">Organizations</a></li>
         <li><a href="/forms">Forms</a></li>
-        <li class="title-bar-right"><a href="/public/assets/login.html" id="signIn">Log In</a></li>
+        <li class="title-bar-right"><a href="/login" id="signIn">Log In</a></li>
     </ul>
     <div class="translucent-form-overlay">
-        <form>
+        <form class="signup">
             <h3>Sign Up Form</h3>
             <div class="row columns">
                 <label><strong>First Name</strong>
-                    <input type="text" id="fn" placeholder="Type first name here..">
+                    <input type="text" id="first-name" placeholder="Type first name here..">
                 </label>
             </div>
             <div class="row columns">
                 <label><strong>Last Name</strong>
-                    <input type="text" id="ln" placeholder="Type last name here..">
+                    <input type="text" id="last-name" placeholder="Type last name here..">
                 </label>
             </div>
             <div class="row columns">
                 <label><strong>Email</strong>
-                    <input type="text" id="em" placeholder="Type email here..">
+                    <input type="text" id="email" placeholder="Type email here..">
                 </label>
             </div>
             <div class="row columns">
                 <label><strong>Address</strong>
-                    <input type="text" id="ad" placeholder="Type address here..">
+                    <input type="text" id="address" placeholder="Type address here..">
                 </label>
             </div>
             <div class="row columns">
                 <label><strong>Phone Number</strong>
-                    <input type="text" id="pn" placeholder="Type phone number here..">
+                    <input type="text" id="phone-num" placeholder="Type phone number here..">
                 </label>
             </div>
             <div class="row columns">
                 <label><strong>Password</strong>
-                    <input type="text" id="pw" placeholder="Type password here..">
+                    <input type="text" id="password" placeholder="Type password here..">
                 </label>
             </div>
             <button type="submit" class="primary button expanded search-button row columns">
@@ -60,10 +60,11 @@
         </form>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/js/foundation.min.js"
-        integrity="sha256-/PFxCnsMh+nTuM0k3VJCRch1gwnCfKjaP8rJNq5SoBg= sha384-9ksAFjQjZnpqt6VtpjMjlp2S0qrGbcwF/rvrLUg2vciMhwc1UJJeAAOLuJ96w+Nj sha512-UMSn6RHqqJeJcIfV1eS2tPKCjzaHkU/KqgAnQ7Nzn0mLicFxaVhm9vq7zG5+0LALt15j1ljlg8Fp9PT1VGNmDw=="
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/login.js"></script>
+      integrity="sha256-/PFxCnsMh+nTuM0k3VJCRch1gwnCfKjaP8rJNq5SoBg= sha384-9ksAFjQjZnpqt6VtpjMjlp2S0qrGbcwF/rvrLUg2vciMhwc1UJJeAAOLuJ96w+Nj sha512-UMSn6RHqqJeJcIfV1eS2tPKCjzaHkU/KqgAnQ7Nzn0mLicFxaVhm9vq7zG5+0LALt15j1ljlg8Fp9PT1VGNmDw=="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/assets/js/signup.js"></script>
     <script>
         $(document).foundation();
     </script>
