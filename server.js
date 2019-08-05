@@ -21,6 +21,8 @@ app.use(passport.session());
 require ("./routes/html-routes")(app);
 require("./routes/user-api-routes")(app);
 require("./routes/event-api-routes")(app);
+require ("./routes/userSignup-routes")(app);
+
 // Syncing our sequelize models and then starting our Express app
 db.sequelize.sync().then(function() {
   app.listen(PORT, function() {
