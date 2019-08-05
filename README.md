@@ -9,7 +9,7 @@
 
 2. In the top right corner of the website, there is a *LOG IN* button where, if clicked, will take them to the login page of the website.
 
-* Additionally, under the login page form, there is also a link to take them to the sign up page if the user doesn't have a registered account on our website. If they choose this option, the page will load a sign up form and the user just has to input their information that the website is requesting and hit *Sumbit* when completed.
+* Additionally, under the login page form, there is also a link to take them to the sign up page if the user doesn't have a registered account on our website. If they choose this option, the page will load a sign up form and the user just has to input their information that the website is requesting and hit *Submit* when completed.
 
 3. If the login is successful, the website will load the members page, in which loads all the premade events that the user can sign up for.
 
