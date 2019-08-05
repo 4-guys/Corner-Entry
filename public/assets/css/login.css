@@ -1,0 +1,26 @@
+.center {
+    text-align: center;
+}
+
+#carphoto {
+    background: url(../img/White-Car2.jpg);
+    background-position: center;
+    background-size: 100%;
+    height: 500px;
+}
+
+@media only screen and (max-width:980px) {
+    #carphoto {
+        background: url(../img/White-Car2.jpg);
+        background-position: center;
+        height: 500px;
+    }
+}
+
+#text {
+    text-align: center;
+}
+
+.button {
+    width: 100px;
+}
