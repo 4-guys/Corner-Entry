@@ -3,6 +3,14 @@ var path = require('path');
 var isAuthenticated = require("../config/middleware/isAuthenticated");
 
 module.exports = function (app) {
+    app.get("/", function (req, res) {
+        // If the user already has an account send them to the members page
+        if (req.user) {
+            res.redirect("/members");
+        }
+        res.sendFile(path.join(__dirname, "../public/assets/login.html"));
+    });
+
     app.get("/userSignup", function (req, res) {
 
         res.sendFile(path.join(__dirname, "../public/assets/userSignup.html"));
@@ -13,7 +21,7 @@ module.exports = function (app) {
         if (req.user) {
             res.redirect("/users");
         }
-        res.sendFile(path.join(__dirname, "../public/assets/login.html"));
+        res.sendFile(path.join(__dirname, "../public/assets/signup.html"));
     });
 
     app.get("/login", function (req, res) {
@@ -21,7 +29,7 @@ module.exports = function (app) {
         if (req.user) {
             res.redirect("/users");
         }
-        res.sendFile(path.join(__dirname, "../public/assets/signup.html"));
+        res.sendFile(path.join(__dirname, "../public/assets/login.html"));
     });
 
 
