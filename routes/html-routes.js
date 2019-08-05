@@ -38,7 +38,7 @@ module.exports = function (app) {
     // If a user who is not logged in tries to access this route they will be redirected to the signup page
     app.get("/members",isAuthenticated, function (req, res) {
         console.log("you're sign in");
-        res.sendFile(path.join(__dirname, "../public/assets/members.html"));
+        res.sendFile(path.join(__dirname, "../views/layouts/events.html"));
     });
     app.get("/admin", isAuthenticatedAdmin, function(req, res) {
         res.sendFile(path.join(__dirname, "../views/admin.html"));
