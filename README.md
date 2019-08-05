@@ -25,7 +25,7 @@
 
 ## Created by:
 * **Michael Eguina**
-* **Tai Nguyen** [Github]!(https://github.com/Tai-Nguyen-89)
+* **Tai Nguyen** [Github](https://github.com/Tai-Nguyen-89)
 * **Calvin Vo**
 * **Christopher Cudiamat**
 
