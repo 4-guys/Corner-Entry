@@ -27,8 +27,8 @@
 **INSERT URL HERE**
 
 ## Created by:
-* **Michael Eguina** [Michael Github Link](https://github.com/Adriverforlife)
-* **Tai Nguyen** [Tai Github Link](https://github.com/Tai-Nguyen-89)
-* **Calvin Vo** [Calvin Github Link](https://github.com/Calyasu)
-* **Christopher Cudiamat** [Chris Github Link](https://github.com/ccudiamat)
+* [**Michael Eguina**](https://github.com/Adriverforlife)
+* [**Tai Nguyen**](https://github.com/Tai-Nguyen-89)
+* [**Calvin Vo**](https://github.com/Calyasu)
+* [**Christopher Cudiamat**](https://github.com/ccudiamat)
 
