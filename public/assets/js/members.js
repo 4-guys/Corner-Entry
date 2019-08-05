@@ -48,7 +48,7 @@ $(document).ready(function () {
         eventContainer.empty();
         var eventAdd = [];
         for (var i = 0; i < event.length; i++) {
-            eventAdd.push("<div>" + event[i].eventName + "<br>" + "<button data-eventId='" + event[i].id + "' class='btn eventSignup' > Sign Up </button>" + "</div>");
+            eventAdd.push("<div><h2>" + event[i].eventName + "</h2><br><p>"+event[i].eventDescription + "</p><br><button data-eventId='" + event[i].id + "' class='btn eventSignup' > Sign Up </button>" + "</div>");
         }
         eventContainer.append(eventAdd);
     }
