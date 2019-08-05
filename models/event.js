@@ -46,19 +46,19 @@ module.exports = function (sequelize, DataTypes) {
     maxEntry: {
       type: DataTypes.BIGINT,
       allowNull: true,
-     
+
     },
     eventPhoto: {
       type: DataTypes.STRING,
       allowNull: true,
-     
+
     },
 
 
   });
   Event.associate = function (models) {
-  //   // Associating Store with Posts
-  //   // When an Store is deleted, also delete any associated Posts
+    //   // Associating Store with Posts
+    //   // When an Store is deleted, also delete any associated Posts
     Event.belongsTo(models.Organizer, {
       foreignKey: {
         allowNull: true

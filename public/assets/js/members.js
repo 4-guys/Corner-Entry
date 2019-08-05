@@ -31,7 +31,7 @@ $(document).ready(function () {
     user= await $.get("/api/user_data");
     console.log(user)
 
-        $(".member-name").text(user.email);
+        $(".member-name").text(user.firstName + " " + user.lastName);
     
     var eventContainer = $("#event-list");
   
@@ -48,7 +48,14 @@ $(document).ready(function () {
         eventContainer.empty();
         var eventAdd = [];
         for (var i = 0; i < event.length; i++) {
-            eventAdd.push("<div><h2>" + event[i].eventName + "</h2><br><p>"+event[i].eventDescription + "</p><br><button data-eventId='" + event[i].id + "' class='btn eventSignup' > Sign Up </button>" + "</div>");
+            eventAdd.push("<tr class='table-expand-row' data-open-details><td>" 
+            + event[i].eventDate + "</td><td>" 
+            + event[i].eventName + "</td><td>"
+            + event[i].eventLocation + "</td><td>"
+            + "<button data-eventId='" + event[i].id + "' class='button eventSignup'> Sign Up </button></tr>"
+            + "<tr class='table-expand-row-content'>"
+            + "<td colspan='8' class='table-expand-row-nested'><p>"
+            + event[i].eventDescription + "</td></tr>");
         }
         eventContainer.append(eventAdd);
     }
