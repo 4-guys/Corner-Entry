@@ -40,21 +40,25 @@
     <li class="active"><a href="#">Home</a></li>
     <li><a href="#">Events</a></li>
     <li><a href="#">Organizations</a></li>
-    <li><a href="#">O</a></li>
-    <li><a href="#">Products</a></li>
-    <li class="title-bar-right"><a href="#" id="signIn">Sign In</a></li>
+    <li><a href="#">Forums</a></li>
+    <!-- <li><a href="#">Products</a></li> -->
+    <li class="title-bar-right"><a href="../../public/assets/login.html" id="signIn">Sign In</a></li>
   </ul>
 
   <!-- Navbar END -->
   <!-- Image -->
   <!-- Background image of car is in webpage.css -->
   <div class="full-width-testimonial">
+    <br>
+    <br>
     <div class="full-width-testimonial-section">
       <div class="full-width-testimonial-icon text-center">
       </div>
       <div class="full-width-testimonial-content">
         <h5 class="full-width-testimonial-text">
-            <div id="cornerexit"> <img  src="../../public/assets/img/CornerExitText.png" alt=""> </div>
+          <br>
+          <br>
+          <!-- <div id="cornerexit"> <img src="../../public/assets/img/CornerExitText.png" alt=""> </div> -->
           <br>
           <br>
           <br>
@@ -63,65 +67,75 @@
     </div>
   </div>
 
-  <!-- Main Body -->
+  <!-- Main Body + Side Panel -->
 
   <div class="app-dashboard-body off-canvas-wrapper">
     <!-- <div id="app-dashboard-sidebar" class="app-dashboard-sidebar position-left off-canvas off-canvas-absolute reveal-for-medium" data-off-canvas> -->
     <div class="app-dashboard-sidebar-title-area">
       <div class="app-dashboard-close-sidebar">
-        <h3 class="app-dashboard-sidebar-block-title">Events</h3>
+        <h3 class="app-dashboard-sidebar-block-title"></h3>
       </div>
       <br>
 
-      <div class="app-dashboard-sidebar-inner">
-        <ul class="menu vertical">
-          <li><a href="#" class="is-active">
-              <span class="app-dashboard-sidebar-text">Buildings</span>
-            </a></li>
-          <li><a>
-              <span class="app-dashboard-sidebar-text">Time</span>
-            </a></li>
-          <li><a>
-              <span class="app-dashboard-sidebar-text">Industry</span>
-            </a></li>
-          <li><a href="#" class="is-active">
-              <span class="app-dashboard-sidebar-text">Buildings</span>
-            </a></li>
-          <li><a>
-              </i><span class="app-dashboard-sidebar-text">Time</span>
-            </a></li>
-          <li><a>
-              <span class="app-dashboard-sidebar-text">Industry</span>
-            </a></li>
-          <li><a href="#" class="is-active">
-              <span class="app-dashboard-sidebar-text">Buildings</span>
-            </a></li>
-          <li><a>
-              <span class="app-dashboard-sidebar-text">Time</span>
-            </a></li>
-          <li><a>
-              <span class="app-dashboard-sidebar-text">Industry</span>
-            </a></li>
-        </ul>
+      <!-- Side panel -->
+      <button class="openbtn" onclick="openNav()">Events |||</button> 
+      <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="app-dashboard-sidebar-inner">
+          <ul class="menu vertical">
+            <li><a href="#" class="is-active">
+                <span class="app-dashboard-sidebar-text">Autocross</span>
+              </a></li>
+            <li><a>
+                <span class="app-dashboard-sidebar-text">Conventions</span>
+              </a></li>
+            <li><a>
+                <span class="app-dashboard-sidebar-text">Cruises and Tours</span>
+              </a></li>
+            <li><a href="#" class="is-active">
+                <span class="app-dashboard-sidebar-text">Driving Schools</span>
+              </a></li>
+            <li><a>
+                </i><span class="app-dashboard-sidebar-text">Gimmick Rally</span>
+              </a></li>
+            <li><a>
+                <span class="app-dashboard-sidebar-text">Hillclimb/Time Trial</span>
+              </a></li>
+            <li><a href="#" class="is-active">
+                <span class="app-dashboard-sidebar-text">Open Track/HPDE</span>
+              </a></li>
+            <li><a>
+                <span class="app-dashboard-sidebar-text">RallyCross</span>
+              </a></li>
+            <li><a>
+                <span class="app-dashboard-sidebar-text">Road Racing</span>
+              </a></li>
+            <li><a>
+                <span class="app-dashboard-sidebar-text">Shows/Concours</span>
+              </a></li>
+            <li><a>
+                <span class="app-dashboard-sidebar-text">TSD Rally</span>
+              </a></li>
+            <li><a>
+                <span class="app-dashboard-sidebar-text">Test and Tunes</span>
+              </a></li>
+            <li><a>
+                <span class="app-dashboard-sidebar-text">Trade Shows</span>
+              </a></li>
+          </ul>
+        </div>
       </div>
+      <!-- Side Panel END -->
+      
     </div>
-
     <div class="app-dashboard-body-content off-canvas-content" data-off-canvas-content>
-      <h2 class="text-center">Lorem Ipsum</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus blandit ligula eget est feugiat viverra. Duis
-        a arcu laoreet, rhoncus libero imperdiet, placerat velit. Vestibulum euismod mi et ornare sodales. Donec
-        efficitur mattis blandit. Proin in massa elit. Praesent malesuada iaculis nisl, a venenatis dui. Nullam
-        venenatis tincidunt placerat. Suspendisse egestas urna a aliquet pretium.</p>
+      <h2 class="text-center">AUTOMOTIVE EVENT MANAGEMENT</h2>
+      <p>We are a group of Motorsport enthusiasts that can be hired to provide management and equipment for events such
+        as Arrive and Drives, AutoXes, RallyX, Demo courses, etc. Clients have included Speed Ventures, 86Fest,
+        Subiefest, Triumph Club, SCCA Rallycross, various BMW Club Chapters, and more! We can accomidate events of
+        almost any size, as we have several sets of timing equipment, and WAY too many cones!</p>
 
-      <p>Curabitur ullamcorper mollis lobortis. Integer a scelerisque turpis, sed dictum lorem. Pellentesque habitant
-        morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam quis placerat sem. Suspendisse
-        vulputate, leo ac sollicitudin lobortis, dui dui blandit justo, ut molestie justo sem in ipsum. Vestibulum
-        convallis ex ac est tristique tincidunt. Vivamus dui dui, viverra et urna vitae, aliquam facilisis erat. Nam
-        lorem nibh, elementum semper commodo at, fermentum quis justo. Donec finibus sapien eget scelerisque rhoncus.
-        Nullam at nisi sed mi congue vestibulum. Vivamus nec scelerisque orci, vel fringilla nisi. Sed dictum, leo in
-        consectetur porttitor, quam nibh aliquet nisi, in pulvinar sapien ante id dui. Aliquam massa nisl, auctor eget
-        nisl in, faucibus gravida lectus. Nullam mattis orci at turpis finibus egestas. Nam vitae lorem accumsan, tempus
-        lectus vitae, rutrum diam. Integer pulvinar placerat magna aliquam scelerisque.</p>
+      <p>Email me at Michael@Corner-Exit.com for any questions/inquiries.</p>
 
       <p>Duis consectetur magna velit, nec porttitor velit fermentum pulvinar. Duis varius justo eu varius pellentesque.
         Curabitur aliquet velit mauris, quis aliquam leo pharetra in. Integer rhoncus ut dui in rhoncus. Maecenas nec
@@ -160,31 +174,36 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorem accusantium architecto id quidem,
           itaque nesciunt quam ducimus atque.</p>
 
-        <ul class="menu marketing-site-footer-menu-social simple">
-          <h4>Follow us!</h4>
-          <div class="clearfix"></div>
+        <!-- <ul class="menu marketing-site-footer-menu-social simple"> -->
+        <div class="clearfix"></div>
+        <div>
+          <h3 class="follow">Follow us!</h3>
           <button type="button" class="button social facebook">
             <i class="fa fa-facebook" aria-hidden="true"></i> Facebook
           </button>
           <button type="button" class="button social instagram">
             <i class="fa fa-instagram" aria-hidden="true"></i> Instagram
           </button>
-        </ul>
+          <!-- <button type="button" class="button social instagram">
+              <i class="fa fa-instagram" aria-hidden="true"></i> Instagram
+            </button>
+            <button type="button" class="button social instagram">
+              <i class="fa fa-instagram" aria-hidden="true"></i> Instagram
+            </button> -->
+        </div>
+
+        <!-- </ul> -->
 
       </div>
       <div class="medium-4 columns">
-        <h4 class="marketing-site-footer-title">Contact Info</h4>
-        <div class="marketing-site-footer-block">
-          <i class="fa fa-map-marker" aria-hidden="true"></i>
-          <p>100 W Rincon<br>San Francisco, CA 94015</p>
-        </div>
+        <h5 class="marketing-site-footer-title">Contact Info</h5>
         <div class="marketing-site-footer-block">
           <i class="fa fa-phone" aria-hidden="true"></i>
-          <p>1 (800) 555-5555</p>
+          <p>(949)632-4550</p>
         </div>
         <div class="marketing-site-footer-block">
           <i class="fa fa-envelope-o" aria-hidden="true"></i>
-          <p>yetirules@fakeemail.com</p>
+          <p>michael@corner-exit.com</p>
         </div>
       </div>
 
@@ -214,28 +233,39 @@
 
     </div>
     </div>
-    <div class="marketing-site-footer-bottom">
+    <!-- <div class="marketing-site-footer-bottom">
       <div class="row large-unstack align-middle">
         <div class="column">
-          <p>&copy; 2017 No rights reserved</p>
+          <p>&copy; 2019 No Rights Reserved</p>
         </div>
         <div class="column">
           <ul class="menu marketing-site-footer-bottom-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Works</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Organizations</a></li>
+            <li><a href="#">Forums</a></li>
             <li><a href="#">News</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
-      </div>
+      </div> -->
     </div>
+    <div class="norights"><p>&copy; 2019 No Rights Reserved</p></div>
+    <br>
   </footer>
 
   <!-- Footer END -->
 
-
+  <script>
+      function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+      }
+      </script>
+      
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/what-input.js"></script>
   <script src="js/vendor/foundation.min.js"></script>

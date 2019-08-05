@@ -1,66 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
 
 <head>
-    <title>Passport Authentication</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
-    <link href="stylesheets/style.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/css/foundation.min.css"
+        integrity="sha256-xpOKVlYXzQ3P03j397+jWFZLMBXLES3IiryeClgU5og= sha384-gP4DhqyoT9b1vaikoHi9XQ8If7UNLO73JFOOlQV1RATrA7D0O7TjJZifac6NwPps sha512-AKwIib1E+xDeXe0tCgbc9uSvPwVYl6Awj7xl0FoaPFostZHOuDQ1abnDNCYtxL/HWEnVOMrFyf91TDgLPi9pNg=="
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/signup.css">
+    <link rel="stylesheet" href="./css/webpage.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
+    <ul class="menu menu-hover-lines">
+        <li class="active"><a href="../views/layouts/index.html">Home</a></li>
+        <li><a href="/events">Events</a></li>
+        <li><a href="/organizations">Organizations</a></li>
+        <li><a href="/forms">Forms</a></li>
+        <li class="title-bar-right"><a href="/public/assets/login.html" id="signIn">Log In</a></li>
+    </ul>
+    <div class="translucent-form-overlay">
+        <form>
+            <h3>Sign Up Form</h3>
+            <div class="row columns">
+                <label><strong>First Name</strong>
+                    <input type="text" id="fn" placeholder="Type first name here..">
+                </label>
             </div>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h2>Sign Up Form</h2>
-                <form class="signup">
-
-                    <div class="form-group">
-                        <label for="first-name">First Name</label><br>
-                        <input type="text" id="first-name" >
-                    </div>
-
-                    <div class="form-group">
-                        <label for="last-name">Last name</label><br>
-                        <input type="text" id="last-name" >
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email</label><br>
-                        <input type="text" id="email" >
-                    </div>
-
-                    <div class="form-group">
-                        <label for="address">Address</label><br>
-                        <input type="text" id="address">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone-num">Phone Number</label><br>
-                        <input type="text" id="phone-num">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="password">Password</label><br>
-                        <input type="text" id="password">
-                    </div>
-                    <button type="submit" class="btn btn-default">Sign Up</button>
-                </form>
-                <br />
-                <p>Or log in <a href="/">here</a></p>
+            <div class="row columns">
+                <label><strong>Last Name</strong>
+                    <input type="text" id="ln" placeholder="Type last name here..">
+                </label>
             </div>
-        </div>
+            <div class="row columns">
+                <label><strong>Email</strong>
+                    <input type="text" id="em" placeholder="Type email here..">
+                </label>
+            </div>
+            <div class="row columns">
+                <label><strong>Address</strong>
+                    <input type="text" id="ad" placeholder="Type address here..">
+                </label>
+            </div>
+            <div class="row columns">
+                <label><strong>Phone Number</strong>
+                    <input type="text" id="pn" placeholder="Type phone number here..">
+                </label>
+            </div>
+            <div class="row columns">
+                <label><strong>Password</strong>
+                    <input type="text" id="pw" placeholder="Type password here..">
+                </label>
+            </div>
+            <button type="submit" class="primary button expanded search-button row columns">
+                Submit
+            </button>
+        </form>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../assets/js/signup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/js/foundation.min.js"
+        integrity="sha256-/PFxCnsMh+nTuM0k3VJCRch1gwnCfKjaP8rJNq5SoBg= sha384-9ksAFjQjZnpqt6VtpjMjlp2S0qrGbcwF/rvrLUg2vciMhwc1UJJeAAOLuJ96w+Nj sha512-UMSn6RHqqJeJcIfV1eS2tPKCjzaHkU/KqgAnQ7Nzn0mLicFxaVhm9vq7zG5+0LALt15j1ljlg8Fp9PT1VGNmDw=="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
 
 </body>
 

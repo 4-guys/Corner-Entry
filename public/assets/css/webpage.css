@@ -2,7 +2,16 @@
 
 .menu {
   margin-left: 10%;
-  margin-right: 10%
+  margin-right: 10%;
+}
+
+.menu a {
+  color: rgb(200, 0, 0);
+  
+}
+
+.vertical {
+  text-align: center;
 }
 
 .menu-hover-lines {
@@ -73,29 +82,10 @@
 
   /* Head Image */
 
-  #cornerexit {
-  position: relative;
-  right: 10%;
-  /* background: linear-gradient(rgba(255, 255, 255, 0.384), rgba(24, 24, 24, 0.411)); */
-  background: rgba(204, 204, 204, 0.479);
-  padding-right: 5%;
-  padding-left: 5%;
-  width: 55%;
-  border-bottom: 110px;
-}
-
   .full-width-testimonial {
-    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)), url("../../assets/img/White-Car2.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)), url("../../assets/img/White-Car_LW.png");
     background-position: center center;
-    background-size: 100%;
-    background-position-y: 62%;
-  }
-  
-  .full-width-testimonial-icon .quote-path {
-    fill: none;
-    stroke: #ffae00;
-    stroke-width: 2.5192;
-    stroke-miterlimit: 10;
+    background-size: 145%;
   }
   
   .full-width-testimonial-content,
@@ -104,7 +94,7 @@
   }
   
   .full-width-testimonial-section {
-    padding-top: 2rem;
+    padding: 2rem;
   }
 
   .full-width-testimonial-text {
@@ -112,7 +102,7 @@
     padding-left: 40px;
     padding-right: 200px;
   }
-  
+
   .full-width-testimonial-section .full-width-testimonial-text {
     font-weight: 300;
     color: #ffffff;
@@ -123,11 +113,17 @@
     padding-right: 200px;
     font-size: 1.5em;
   }
+
   
   @media print, screen and (min-width: 40em) {
     .full-width-testimonial-section .full-width-testimonial-text {
       padding-left: 100px;
       padding-right: 100px;
+    }
+    .full-width-testimonial {
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)), url("../../assets/img/White-Car_LW.png");
+      background-position: center center;
+      background-size: 100%;
     }
   }
   
@@ -137,6 +133,11 @@
       padding-right: 180px;
       font-size: 1.8em;
     }
+    .full-width-testimonial {
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)), url("../../assets/img/White-Car_LW.png");
+      background-position: center center;
+      background-size: 100%;
+    }
   }
   
   @media screen and (min-width: 75em) {
@@ -144,9 +145,11 @@
       padding-left: 300px;
       padding-right: 300px;
     }
-    #cornercar {
-      width: 105%;
-      border-bottom: 110px;
+    .full-width-testimonial {
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)), url("../../assets/img/White-Car_LW.png");
+      background-position: center center;
+      background-size: 100%;
+      /* background-position-y: 53%; */
     }
   }
   
@@ -181,9 +184,58 @@
     
   /* Head Image END */
   
+  /* Side Panel */
+
+.sidepanel  {
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  /* padding: 8px 8px 8px 32px; */
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #c20202;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: rgb(255, 255, 255);
+  padding: 10px 15px;
+  border: none;
+  margin-bottom: 5px;
+}
+
+.openbtn:hover {
+  background-color:rgb(0, 0, 0);
+}
+  /* Side Panel End */
   
 /* app */
-  
+
 .app-dashboard {
     height: 100vh;
     display: -webkit-flex;
@@ -315,6 +367,7 @@
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
+    text-align: center;
   }
   
   .app-dashboard-sidebar .app-dashboard-sidebar-inner .menu > li > a {
@@ -445,8 +498,13 @@
   
   /* Footer */
 
+.follow {
+  color: white;
+  font-size: 22px;
+}
+
   .marketing-site-footer {
-    background: #2c3840;
+    background: #474747;
     color: #8aa0ae;
     padding: 2rem 0 0;
   }
@@ -504,7 +562,7 @@
   }
   
   .marketing-site-footer-bottom {
-    background: #020304;
+    background: #0b1116;
     padding: 1rem 0;
   }
   
@@ -545,6 +603,10 @@
   
 .social {
   margin-right: .25rem;
+}
+
+.norights {
+  text-align: center;
 }
 
 .social.facebook {
