@@ -20,10 +20,12 @@
 * Javascript/jQuery
 * node.js
 * Foundation by ZURB
+* bcrypt
+* Passport.js
 
 ## Created by:
 * **Michael Eguina**
-* **Tai Nguyen**
+* **Tai Nguyen** [Github]!(https://github.com/Tai-Nguyen-89)
 * **Calvin Vo**
 * **Christopher Cudiamat**
 
