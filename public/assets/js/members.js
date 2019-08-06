@@ -15,7 +15,8 @@ function signUpUser(EventId, UserId) {
         EventId: EventId,
         UserId: UserId,
     }).then(function (data) {
-        window.location.replace(data);
+       //window.location.replace(data);
+        location.reload();
         // If there's an error, handle it by throwing up a bootstrap alert
     }).catch(handleLoginErr);
 }

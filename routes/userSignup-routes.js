@@ -46,7 +46,7 @@ module.exports = function (app) {
             EventId: req.body.EventId,
             UserId: req.body.UserId
         }).then(function() {
-          res.redirect(307, "/");
+          res.redirect(307, "/members");
         })
       });
 //     // DELETE route for deleting userSignup
