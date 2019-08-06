@@ -14,7 +14,7 @@ function signUpUser(EventId, UserId) {
     $.post("/api/userSignup", {
         EventId: EventId,
         UserId: UserId,
-    }).then(function (data) {
+    }).then(function () {
        //window.location.replace(data);
         location.reload();
         // If there's an error, handle it by throwing up a bootstrap alert
