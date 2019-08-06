@@ -41,7 +41,7 @@ module.exports = function (app) {
         res.sendFile(path.join(__dirname, "../views/layouts/events.html"));
     });
     app.get("/admin", isAuthenticatedAdmin, function(req, res) {
-        res.sendFile(path.join(__dirname, "../views/admin.html"));
+        res.sendFile(path.join(__dirname, "../public/assets/eventadd.html"));
     });
     
 }

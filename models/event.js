@@ -25,23 +25,17 @@ module.exports = function (sequelize, DataTypes) {
     eventDate: {
       type: DataTypes.DATEONLY,
       allowNull: false,
-      validate: {
-        len: [1]
-      }
+
     },
     registrationStart: {
       type: DataTypes.DATEONLY,
       allowNull: false,
-      validate: {
-        len: [1]
-      }
+
     },
     registrationEnd: {
       type: DataTypes.DATEONLY,
       allowNull: false,
-      validate: {
-        len: [1]
-      }
+
     },
     maxEntry: {
       type: DataTypes.BIGINT,

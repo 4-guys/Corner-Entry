@@ -36,10 +36,10 @@ module.exports = function (app) {
             eventLocation: req.body.eventLocation,
             registrationStart: req.body.registrationStart,
             registrationEnd: req.body.registrationEnd,
-            maxEntry: req.body.maxEntry,
-            eventId: req.body.eventId
-        }).then(function (dbEvent) {
-            res.json(dbEvent);
+            eventDate: req.body.eventDate
+        }).then(function () {
+            console.log("added event")
+            res.redirect(307, "/");
         });
     });
 
