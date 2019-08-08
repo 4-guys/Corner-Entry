@@ -70,7 +70,7 @@ $(document).ready(function () {
              str += "<td>already registered</td>" 
             }
             else{
-                str += "<td>" + "<button data-eventId='" + event[i].id + "' class='button eventSignup'> Sign Up </button></tr>"
+                str += "<td>" + "<button data-eventId='" + event[i].id + "' class='button eventSignup' onClick='window.location.reload();'> Sign Up </button></tr>"
                 }
             str += "<tr class='table-expand-row-content'>"
                 + "<td colspan='8' class='table-expand-row-nested'><p>"
@@ -92,3 +92,7 @@ doEverything()
     //     newEvent.text(events.eventName);
     // }
 });
+
+function refreshPage(){
+    window.location.reload();
+}
