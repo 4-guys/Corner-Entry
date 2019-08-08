@@ -1,0 +1,25 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+tr:hover {background-color:#ffffff;}
+
+#eventstable {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.unstriped {
+  text-align: left;
+}
+
+.off-canvas-content {
+width: 100%;
+}
