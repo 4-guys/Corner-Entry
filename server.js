@@ -22,6 +22,8 @@ require ("./routes/html-routes")(app);
 require("./routes/user-api-routes")(app);
 require("./routes/event-api-routes")(app);
 require ("./routes/userSignup-routes")(app);
+require ("./routes/auth-login")(app);
+
 
 // Syncing our sequelize models and then starting our Express app
 db.sequelize.sync().then(function() {
