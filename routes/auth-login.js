@@ -1,5 +1,6 @@
 var path = require('path');
-
+var passport= require('passport')
+var passportSetup= require('../config/passport')
 var isAuthenticated = require("../config/middleware/isAuthenticated");
 var isAuthenticatedAdmin = require("../config/middleware/isAuthenticatedAdmin");
 
@@ -11,11 +12,14 @@ module.exports = function (app) {
         }
         res.sendFile(path.join(__dirname, "../views/layouts/index.html"));
     });
-    app.get("/auth/google", function (req, res) {
-        // HANDLE WITH PASSPORT
+    app.get("/auth/google", passport.authenticate('google',{
+        scope: ["profile"]
 
-        res.send("logging in with google");
-    });
+    }));
+    //google redirects to
+    app.get("/auth/google/redirect",passport.authenticate('google'), function(req,res){
+        res.redirect("/members");
+    })
 
 
     app.get("/auth/login", function (req, res) {

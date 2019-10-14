@@ -1,7 +1,7 @@
 var express = require("express");
 var session = require("express-session");
 var passport = require("./config/passport");
-
+var keys = require('./config/keys')
 var app = express();
 var PORT = process.env.PORT || 3000;
 var db = require("./models/");
@@ -13,7 +13,7 @@ app.use(express.static("public"));
 // require("./routes/organizer-api-routes.js")(app);
 // require("./routes/user-api-routes.js")(app);
 
-app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
+app.use(session({ secret: [keys.session.secret], resave: true, saveUninitialized: true }));
 app.use(passport.initialize());
 app.use(passport.session());
 

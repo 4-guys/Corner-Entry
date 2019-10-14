@@ -7,41 +7,49 @@ module.exports = function (sequelize, DataTypes) {
     // Giving the user model a name of type STRING
     firstName: {
       type: DataTypes.STRING,
-      allowNull: false,
+      defaultValue: "not entered",
+      allowNull: true,
       validate: {
         len: [1]
       }
     },
     lastName: {
       type: DataTypes.STRING,
-      allowNull: false,
+      defaultValue: "not entered",
+      allowNull: true,
       validate: {
         len: [1]
       }
     },
     email: {
       type: DataTypes.STRING,
-      allowNull: false,
+      defaultValue: "not entered",
+      allowNull: true,
       validate: {
         len: [1]
       }
     },
     address: {
       type: DataTypes.STRING,
-      allowNull: false,
+      defaultValue: "not entered",
+      allowNull: true,
       validate: {
         len: [1]
       }
     },
     phone: {
       type: DataTypes.BIGINT,
-      allowNull: false,
+      allowNull: true,
     },
     password: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
-    role: DataTypes.STRING
+    role: {
+      type:DataTypes.STRING,
+      defaultValue: "member"
+    },
+    googleID: DataTypes.STRING,
   });
   User.associate = function (models) {
   // Associating Store with Posts

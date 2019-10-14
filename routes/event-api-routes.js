@@ -63,7 +63,7 @@ module.exports = function (app) {
                     id: req.body.googleId
                 }
             }).then(function (dbEvent) {
-                res.json(dbEvent);
+                res.redirect(307, "/members");
             });
     });
 };

@@ -23,3 +23,46 @@ tr:hover {background-color:#ffffff;}
 .off-canvas-content {
 width: 100%;
 }
+
+/* attempt at minimizing event description */
+
+
+.table-expand-row-content {
+  display: none;
+}
+
+.table-expand-row-content.is-active {
+  display: table-row;
+  -webkit-animation: fadeIn ease-in 1;
+          animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+.table-expand-row.is-active .expand-icon::after {
+  content: ' -';
+}
+
+.table-expand-row .expand-icon::after {
+  content: ' +';
+  /* float: right; */
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

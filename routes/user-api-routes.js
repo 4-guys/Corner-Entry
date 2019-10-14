@@ -50,6 +50,8 @@ module.exports = function (app) {
             id: req.user.id,
             firstName: req.user.firstName,
             lastName: req.user.lastName,
+            address: req.user.address,
+            phone:req.user.phone
           });
         }
       });
@@ -102,5 +104,24 @@ module.exports = function (app) {
             res.json(dbUser);
         });
     });
+    app.put("/api/update", function (req, res) {
+        db.User.update(
+            req.body,
+            {
+                where: {
+                    id: req.body.id
+                }
+            }).then(function (dbEvent) {
+                console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+ 
+                console.log("req body " +JSON.stringify(req.body))
 
+                console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+                console.log(req.body.userData + "id")
+                console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+
+                console.log(req)
+                res.json(dbEvent);
+            });
+    });
 };
